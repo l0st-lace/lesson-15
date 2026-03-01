@@ -1,0 +1,60 @@
+extends ../layouts/pages-layout
+
+block title 
+    -var title ="Dota 2"
+block content 
+    header 
+        .dota-box
+            .container-xl.p-0 
+                .container 
+                    .row 
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                            .hero-section.pt-5 
+                                h1.hero-title.text-white.m-0 Dota 2
+                                p.hero-desc.text-white.my-5 
+                                    | Dota 2 - компьютерная игра по сети!
+                                p.hero-desc.text-white 
+                                    | В игре участвуют две команды по 5 человек
+    main 
+        section.gallery.pt-5 
+            .container-xl.p-0 
+                .container 
+                    h1.gallery-title Gallery 
+
+
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                img(src="./img/pic/slider/dota-slide-1.png", alt="") 
+                            .swiper-slide
+                                img(src="./img/pic/slider/dota-slide-2.png", alt="")
+                        .swiper-button-next
+                        .swiper-button-prev
+        section.articles.py-5 
+            .container-xl.p-0 
+                .container 
+                    .row 
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/dota-article-1.png")
+                                    h5.card-title Заголовок новости 1
+                                    p.card-text 
+                                        | Описание новости 1
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/dota-article-2.png")
+                                    h5.card-title Заголовок новости 2
+                                    p.card-text 
+                                        | Описание новости 2
+                                    a.btn.btn-primary(href="#") Читать
+                        .col-md-4 
+                            .card 
+                                .card-body 
+                                    img.card-img-top.mb-4(src="./img/pic/articles/dota-article-3.png")
+                                    h5.card-title Заголовок новости 3
+                                    p.card-text 
+                                        | Описание новости 3
+                                    a.btn.btn-primary(href="#") Читать
